@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Observable, Subject }         from 'rxjs';
+// tslint:disable-next-line:import-blacklist
+import { Observable, Subject } from 'rxjs';
 
 import {
    debounceTime, distinctUntilChanged, switchMap
