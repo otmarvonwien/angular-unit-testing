@@ -26,6 +26,6 @@ describe('HeroDetailComponent', () => {
         { provide: Location, useValue: mockLocation }
       ]
     });
+    fixture = TestBed.createComponent(HeroDetailComponent);
   });
-  fixture = TestBed.createComponent(HeroDetailComponent);
 });
