@@ -25,7 +25,7 @@ describe('HeroesComponent', () => {
       mockHeroService.deleteHero.and.returnValue(of(true));
       component.heroes = HEROES;
 
-      component.delete(HEROES[2]);
+      component.deleteHero(HEROES[2]);
 
       expect(component.heroes.length).toEqual(2);
       expect(component.heroes[0]).toEqual(HEROES[0]);
@@ -36,7 +36,7 @@ describe('HeroesComponent', () => {
       mockHeroService.deleteHero.and.returnValue(of(true));
       component.heroes = HEROES;
 
-      component.delete(HEROES[2]);
+      component.deleteHero(HEROES[2]);
 
       expect(mockHeroService.deleteHero).toHaveBeenCalledWith(HEROES[2]);
     });
